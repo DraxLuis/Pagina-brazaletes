@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6c8c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+  }
+
+  .image-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 27rem;
+    position: relative;
+    top: 1.3rem;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 50px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+
+  .options-container {
+    max-width: 500px;
+  }
+
+  .options-container h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .option {
+    margin-bottom: 30px;
+  }
+
+  .option label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-right: 10px;
+  }
+
+  .color-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .color-options button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .color-options button:hover {
+    opacity: 0.8;
+  }
+
+  .accessory-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .accessory-options img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .accessory-options img:hover {
+    transform: scale(1.1);
+  }
+
+  .button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  .default-button {
+    padding: 12px 25px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .default-button:hover {
+    background-color: #e03e3e;
+  }

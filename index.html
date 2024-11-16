@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Personaliza tu Pulsera</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-container">
+      <img id="braceletImage" src="defecto.png" alt="Pulsera">
+    </div>
+
+    <div class="options-container">
+      <h2>Personaliza tu Pulsera</h2>
+
+      <div class="option">
+        <label for="color">Color:</label>
+        <div class="color-options">
+          <button id="colorRed" style="background-color: red;" onclick="changeColor('red')"></button>
+          <button id="colorBlue" style="background-color: blue;" onclick="changeColor('blue')"></button>
+          <button id="colorGreen" style="background-color: green;" onclick="changeColor('green')"></button>
+        </div>
+      </div>
+
+      <div class="option">
+        <label for="accessory">Accesorios:</label>
+        <div class="accessory-options">
+          <img src="estrella.png" alt="Estrella" onclick="changeAccessory('star')">
+          <img src="corazon.png" alt="Corazón" onclick="changeAccessory('heart')">
+          <img src="luna.png" alt="Luna" onclick="changeAccessory('moon')">
+        </div>
+      </div>
+
+      <button class="button" onclick="updateBracelet()">Actualizar Pulsera</button>
+
+      <button class="default-button" onclick="resetBracelet()">Volver a la Pulsera por Defecto</button>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+
+</body>
+</html>
